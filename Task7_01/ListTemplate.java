@@ -1,7 +1,11 @@
-package Task7_01;
+package Task7_02;
 
-public interface ListTemplate<type> {
-    void add(type element);
-    type get(int index);
-    int getSize();
+public class ObjectDictionary<Type>{
+    public Type origin;
+    public Type translation;
+
+    public ObjectDictionary() {
+        this.origin = (Type) new Object();
+        this.translation = (Type) new Object();
+    }
 }
